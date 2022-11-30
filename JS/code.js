@@ -32,7 +32,7 @@
 // // Homework
 // let myDate = new Date();
 // let currentDate = myDate.getDate();
-// console.log("setDate(): ", new Date(myDate.setDate(currentDate + 5)))
+// console.log(new Date(myDate.setDate(currentDate + 5)))
 
 // if statement
 // let age = 17;
@@ -71,22 +71,89 @@
 //     break;
 // }
 
-let grade = 48;
-switch(true) {
-    case grade == 100:
-        console.log("You're awesome")
-    break;
-    case (grade >= 90) && (grade <= 99):
-        console.log("well done");
-    break;
-    case (grade >= 75) && (grade <= 89):
-        console.log("distinction");
-    break;
-    case (grade >= 50) && (grade <= 74):
-        console.log("pass");
-     case (grade <= 49):
-        console.log("sorry man");
-    break;
-    default:
-        console.log("Out of range")
+// let grade = 48;
+// switch(true) {
+//     case grade == 100:
+//         console.log("You're awesome")
+//     break;
+//     case (grade >= 90) && (grade <= 99):
+//         console.log("well done");
+//     break;
+//     case (grade >= 75) && (grade <= 89):
+//         console.log("distinction");
+//     break;
+//     case (grade >= 50) && (grade <= 74):
+//         console.log("pass");
+//      case (grade <= 49):
+//         console.log("sorry man");
+//     break;
+//     default:
+//         console.log("Out of range")
+// }
+
+
+
+/*Loops
+for in (reads index [in arrays]/ for an object it would display the property)
+for of (displays the element/value)
+for(; ;)
+while 
+do while
+.forEach()*/
+
+// let numbers = [8, 9, 3, 12, 34];
+// let people = {
+//     name : 'Cassidy',
+//     surname:'Lawrence',
+//     email:'isucktoes@gmail.com'
+
+// }
+
+// for(let numb in numbers) {
+//     console.log(numb);
+// }
+
+/*for(; ;)*/
+// for(let i =0; i>5; i++) {
+//     console.log("Hello world")
+
+// }
+
+/* while*/
+// let cnt = 0;
+// while(cnt < numbers.length) {
+//     console.log(`Step: ${numbers[cnt]}`);
+//     cnt++;
+   
+// }
+
+/*do while*/
+// let cnt = 0;
+// do{
+//     console.log(`Step: ${numbers[cnt]}`);
+//     cnt++;
+// }while(cnt < numbers.length);
+
+
+/*Function*/
+// function addition(numb1, numb2) {
+//     console.log("Sum is: ",numb1 + numb2);
+//   }
+//   addition(4, 5, 2);
+// /*  would not work there is no third placeholder(there by the two by 4,5,2)*/
+//   addition(7, 7);
+//   addition(5, 5);
+
+/* used arrow function instead of function*/
+// let addition = (numb1, numb2)=>{
+
+//     console.log("Sum of numb1, numb2: ", numb1 + numb2)
+// } 
+
+/*Challenge*/
+ 
+function subtraction (numb1, numb2) {
+    return (numb1 - numb2);
 }
+console.log("Result :", subtraction(2,1));
+
